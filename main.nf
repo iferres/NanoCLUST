@@ -419,7 +419,7 @@ if(params.multiqc){
      else if(workflow.profile == 'conda' || workflow.profile == 'test,conda')
          "$baseDir/" + path
      else
-         "/tmp/" + path
+         "$baseDir/" + path
  }
 
  process consensus_classification {
